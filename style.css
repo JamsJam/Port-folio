@@ -1,0 +1,272 @@
+/* affichage de la carte */
+
+
+/* #accueilCV, */
+#accueilProjet,
+#accueilContact{
+    display: none;
+}
+
+/* reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Permet de se reperer à supprimer  */
+
+.b1{
+    border: 2px solid black;
+}
+
+.b2{
+    border: 1px solid blue;
+}
+
+.b3{
+    border: 2px solid blueviolet;
+}
+
+.b4{
+    border: 2px solid green;
+}
+
+.b5{
+    border: 2px solid aqua;
+}
+
+.b6{
+    border: 2px solid red;
+}
+
+
+/********************************** header */
+.headcontainer{
+    min-width: 375px;
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+    
+header {
+    height: 40vh;
+    position: relative;
+    ;
+    
+}
+/* Navbarre */
+.navi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color:rgb(64, 59, 52);
+    border-bottom: 2px solid rgb(53, 48, 42);
+
+}
+/* Bouton navigation */
+.boutonNav{
+    width: 18vw;
+    height: 50px;
+    border-radius:20px ;
+    background-color: rgb(17 15 40);
+    border: 2px solid rgb(43 40 34);
+    -webkit-box-shadow: -10px -7px 12px -4px #0f0e2a; 
+    box-shadow: -10px -7px 12px -4px #0f0e2a;
+    transition: 0.2s;
+}
+
+.boutonNav a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #C9CACC;
+}
+
+.boutonNav:hover{
+    background-color:#C9CACC;
+    -webkit-box-shadow: 10px 7px 12px -4px #0f0e2a; 
+    box-shadow: 10px 7px 12px -4px #0f0e2a;
+}
+
+.boutonNav:hover a{
+    color: rgb(17 15 40);
+}
+
+
+.navi button:nth-child(2){
+    margin: 0 -50px
+}
+
+
+/* Background + titre */
+.flexBoxTitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: rgba(64, 59, 52, 0.852);
+}
+
+.boxtitre{
+    background-color: rgb(64, 59, 52);
+    border-radius: 10px;
+    border: 2px solid rgb(53, 48, 42);
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(15,14,42,0.61); 
+    box-shadow: 0px 0px 24px -1px rgba(15,14,42,0.61);
+}
+
+.boxtitre h1,h2{
+    margin: 20px;
+}
+
+.titre{
+    font-size: 1.8rem ;
+    color: #C9CACC;
+    text-align: center;
+}
+.sousTitre{
+    color: #C9CACC
+}
+/* Menu burger */
+
+.burger{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 42px;
+    width: 42px;
+    border: 1px solid black;
+}
+.burger:hover{
+    background-color: brown;
+}
+.burger span{
+    display: block;
+    
+    background-color: black;
+    /* border: 0.5px solid black; */
+    margin: 8px auto;
+    height: 1px;
+    width: 24px;
+}
+
+/* ******************************************  MAIN */
+/* main{
+    
+} */
+.maincontainer{
+    min-width: 375px;
+    max-width: 770px;
+    margin: 0 auto;
+    background-color:rgba(64, 59, 52, 0.852);
+    
+}
+
+.subcontainer{ 
+    min-height: 45vh;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto ;
+    border: 2px solid rgb(53, 48, 42);
+    border-radius: 20px;
+    background-color:rgb(64, 59, 52);
+    color: #C9CACC;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(15,14,42,0.61); 
+    box-shadow: 0px 0px 24px -1px rgba(15,14,42,0.61);
+    text-align: center;
+    
+
+}
+
+/* Carte acceuilCV */
+
+#accueilCV .subcontainer p{
+    margin: 10px 10px;
+}
+
+
+#accueilCV{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#accueilCV .sectionTitle{
+    font-size: 1.5rem;
+}
+
+.boutonCV {
+    height: 40px;
+    width: 170px;
+    margin: 20px 0;
+    border-radius:20px ;
+    background-color: rgb(33, 30, 75);
+    border: 2px solid rgb(43 40 34);
+    -webkit-box-shadow: -10px -7px 12px -4px #0f0e2a; 
+    box-shadow: -10px -7px 12px -4px #0f0e2a;
+    transition: 0.2s;
+}
+
+.boutonCV a{
+    text-decoration: none;
+    color: #C9CACC;
+}
+
+.boutonCV:hover{
+    background-color:#C9CACC ;
+    -webkit-box-shadow: 10px 7px 12px -4px #0f0e2a; 
+    box-shadow: 10px 7px 12px -4px #0f0e2a;
+}
+
+.boutonCV:hover a{
+    color: rgb(17 15 40);
+
+}
+/***************************************Footer  */
+footer{
+    
+    background-color: rgb(64, 59, 52);
+    border-top: 2px solid rgb(53, 48, 42);
+}
+
+.footcontainer{
+    height: 20vh;
+    min-width: 375px;
+    max-width: 770px;
+    margin: 0 auto;
+
+}
+
+.footSubcontainer{
+    max-width: 530px;
+    margin: 0 auto;
+}
+.footNavi{
+    height: 8vh;
+    color: rgba(255, 255, 255, 0.393);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footNavi p{
+    font-size: 0.8rem;
+    margin: 0 -20px;
+    /* border: 0.5px solid rgba(255, 255, 255, 0.393); */
+}
+
+.footSocial{
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
