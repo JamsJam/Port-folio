@@ -187,17 +187,18 @@ header {
 
 /* Carte acceuilCV */
 
-#accueilCV .subcontainer p{
-    margin: 10px 10px;
-}
-
-
 #accueilCV{
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+#accueilCV .subcontainer p{
+    margin: 10px 10px;
+}
+
+
 #accueilCV .sectionTitle{
     font-size: 1.5rem;
 }

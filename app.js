@@ -1,12 +1,10 @@
-
-
-
-
 const text1="<h2>Bienvenue sur mon porte-folio</h2>";
-const text2="<h2>Vous trouverez ci-dessous mon cv</h2>";
-const text3="<h2>Via le bouton contact vous accederez a mes coordonnées</h2>";
+const text2="<h2>Vous trouverez ci-dessous mon CV</h2>";
+const text3="<h2>Via le bouton contact vous accéderez à mes coordonnées</h2>";
 const text4="<h2>Mes projets sont disponible via le bouton projet</h2>";
 window.onload = function(){
+
+    // Slide automatique texte 5s
     var i = 1;
     var text;
     
@@ -29,4 +27,6 @@ window.onload = function(){
         
         document.querySelector("#sousTitre").innerHTML = text
     }, 5000)
+
+
 };
