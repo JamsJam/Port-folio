@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <title>Site location</title>
+    </head>
+    <body>
+        <!-- ******************* Header -->
+        <header>
+            <div class="head-container ">
+                <div class="title">
+                    <h1>Bienvenue à bord</h1>
+                    <p>Location 24h/24 et 7j/7</p>
+                </div>
+                <div class="headresearch">
+                    <div class="search">
+                        <form action="#">
+                            <select name="adresse" id="adresse">
+                                <option value="">Adresse de depart</option>
+                                <option value="adresse1">adresse1</option>
+                                <option value="adresse2" >adresse2</option>
+                                <option value="adresse3">adresse13</option>
+                            </select>
+                            <input type="date">
+                            <input type="date">
+                        </form>
+                    </div>
+                    <div class="submit">
+                        valider ma recherche
+                    </div>
+                </div>
+
+                <div class="Burger">
+                    <div id="myNav" class="nav">
+                        <ul>
+                            <li><a href="#">Louer une voiture</a></li>
+                            <li><a href="#">Louer un Utilitaire</a></li>
+                            <li><a href="#">Reserver un chauffeur</a></li>
+                            <li><a href="#">Découvrez nos agences</a></li>
+                            <li><a href="#">Mon compte</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" id="openBtn">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- ******************* Main -->
+        <main>
+            <div class="main-container ">
+                <div class="searchResults">
+                    <p><span>7</span> résultats</p>
+                    <select name="trier" id="trier">
+                        <option value="croissant" >Prix croissant</option>
+                        <option value="décroissant">Prix décroissant</option>
+                    </select>
+                </div>
+                
+                <!-- Slider + carte 1 -->
+                
+                <div class="grille ">
+                    
+                    <!-- Slider -->
+                    <div class="cell1 ">
+                        <div class="previus ">
+                            <img src="./Annexes/icon/iconFlecheGauche.png" alt="previous">
+                        </div>
+                        <div class="imag " >
+                            <img src="./Annexes/Peugeot/peugeot-0.png" alt="Peugeot 208">
+                        </div>
+                        <div class="next">
+                            <img src="./Annexes/icon/iconFlecheDroite.png" alt="next">
+                        </div>
+                    </div>
+                    
+                    <!-- Carte -->
+                    <div class="cell2 ">
+                        <div class="card ">
+                            <h3>Peugeot 208</h3>
+                            <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.5/km supplémentaire),</p>
+                            <p>999 € - Agence de Paris</p>
+                            <button type="submit" class="reserver">Réserver et payer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider + carte 2 -->
+                
+                <div class="grille ">
+                    
+                    <!-- Slider -->
+                    <div class="cell1 ">
+                        <div class="previus ">
+                            <img src="./Annexes/icon/iconFlecheGauche.png" alt="previous">
+                        </div>
+                        <div class="imag " >
+                            <img src="./Annexes/ford/ford-0.png" alt="Voiture noir">
+                        </div>
+                        <div class="next">
+                            <img src="./Annexes/icon/iconFlecheDroite.png" alt="next">
+                        </div>
+                    </div>
+                    
+                    <!-- Carte -->
+                    <div class="cell2">
+                        <div class="card ">
+                            <h3>Ford Focus</h3>
+                            <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.5/km supplémentaire),</p>
+                            <p>999 €</p>
+                            <button type="submit" class="reserver">Réserver et payer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider + carte 3 -->
+                
+                <div class="grille ">
+                    
+                    <!-- Slider -->
+                    <div class="cell1 ">
+                        <div class="previus ">
+                            <img src="./Annexes/icon/iconFlecheGauche.png" alt="previous">
+                        </div>
+                        <div class="imag " >
+                            <img src="./Annexes/audi/audi-0.png" alt="Voiture noir">
+                        </div>
+                        <div class="next">
+                            <img src="./Annexes/icon/iconFlecheDroite.png" alt="next">
+                        </div>
+                    </div>
+                    
+                    <!-- Carte -->
+                    <div class="cell2">
+                        <div class="card ">
+                            <h3>Audi A1</h3>
+                            <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.55/km supplémentaire),</p>
+                            <p>1100 € - Agence de Paris</p>
+                            <button type="submit" class="reserver">Réserver et payer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider + carte 4 -->
+                
+                <div class="grille ">
+                    
+                    <!-- Slider -->
+                    <div class="cell1 ">
+                        <div class="previus ">
+                            <img src="./Annexes/icon/iconFlecheGauche.png" alt="previous">
+                        </div>
+                        <div class="imag " >
+                            <img src="./Annexes/opel/opel-0.png" alt="Voiture noir">
+                        </div>
+                        <div class="next">
+                            <img src="./Annexes/icon/iconFlecheDroite.png" alt="next">
+                        </div>
+                    </div>
+                    
+                    <!-- Carte -->
+                    <div class="cell2">
+                        <div class="card ">
+                            <h3>Opel Mokka</h3>
+                            <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.4/km supplémentaire),</p>
+                            <p>1150 € - Agence de Paris</p>
+                            <button type="submit" class="reserver">Réserver et payer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- ******************* Footer -->
+        <footer>
+            <div class="foot-container">
+                <div class="foot-grille">
+                    <div class="cell3">
+                        <img src="./Annexes/agence.jpg" alt="Agence">
+                    </div>
+                    <div class="cell4">
+                        <div>
+                            <p>Notre Agence de <span>Paris</span></p>
+                            <p>300 boulevard de vauginar,75015, Paris</p>
+                            <p>Ouvert 7j/7 de 09h à 13h et de 14h a 20h</p>
+                            <p>01 49 78 21 33</p>
+                            <p>contact@vtc.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,428 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+
+h3{
+    font-size: 1.5rem;
+    color: rgba(54,53,51,255)
+}
+
+
+/********************************Header********************************/
+header{
+    position: relative;
+    background-image: url(./Annexes/background.jpg) ;
+    background-size: 100vw 74vh;
+    background-position: center;
+    
+
+}
+
+.head-container{
+    height: 66vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title{
+    width: 800px;
+    text-align: center;
+    margin-top: 60px;
+    color: aliceblue;
+}
+
+.title p{
+    font-weight: 400;
+}
+/* ********la div du formulaire */
+.headresearch{
+
+    margin: 50px;
+    width: 800px;
+    background-color: rgba(255,255,255,0.6);
+    display: flex;
+    
+}
+.search{
+    width:600px;
+    height: 45px;
+
+    
+}
+form{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input,select{
+    border-radius: 5px;
+    height: 35px;
+    background: -webkit-linear-gradient(
+        rgba(255,255,255,255),
+        rgba(225,225,225,255)
+    );
+}
+.submit{
+    background-color: rgba(54, 251, 54, 0.358);
+    width: 200px;
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+}
+/* ****Aspect exterieur du burger + hover */
+.Burger{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 43px;
+    border-radius: 7px;
+    border: 3px solid rgba(221,221,221,0.4)
+}
+
+.Burger:hover{
+    background-color: rgba(221,221,221,1);
+    border:3px solid rgba(69, 68, 68, 0.678) ;
+    
+}
+
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: rgba(221,221,221,0.4);
+    margin: 7px auto;
+}
+
+.Burger:hover .burger-icon span{
+    background-color: rgba(69, 68, 68, 0.678);
+}
+
+/* ********Interieur du burger */
+
+.nav {
+
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    background-color: #e8e8e8;
+    left: 0;
+    transition: left 0.5s ease;
+    display: none;
+}
+
+  /* Sidenav menu links */
+.nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.nav a:hover {
+    color: #111;
+}
+  
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  /* Active class */
+.nav.active {
+    display:block;
+
+}
+
+/********************************Main********************************/
+
+.main-container{
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+.searchResults{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.searchResults p {
+    font-weight: 400;
+    font-size: 1,8rem;
+}
+.searchResults span{
+    font-weight: 700;
+}
+
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border-bottom: 2px solid rgba(30, 27, 27, 0.13);
+}
+
+.cell1,.cell2{
+    height: 35vh;
+    width: 590px;
+}
+.cell1{
+    display: flex;
+}
+
+
+.previus,.next{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.next img,
+.previus img{
+    height: 50px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.imag{
+    width: 430px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.cell2{
+    display: flex;
+    align-items: center;
+    
+}
+
+.card p{
+    margin: 10px 0;
+    font-weight: 500;
+    color: rgba(54,53,51,255);
+}
+
+.reserver{
+    height: 30px;
+    width: 150px;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(
+        rgba(92,171,92,255),
+        rgba(63,147,63,255));
+}
+
+/********************************Footer********************************/
+.foot-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot-grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px
+}
+
+.cell3,.cell4{
+    height: 20vh;
+    width: 580px;
+    display: flex;
+    align-items: center;
+}
+
+.cell3{
+    flex-direction:row-reverse;
+}
+.cell3 img{
+    height: 110px;
+}
+
+.cell4{
+    font-weight: 500;
+    color: rgba(54, 53, 51, 0.708);
+}
+
+.cell4 span{
+    font-weight: 700;
+}
+
+
+/* Partie Responsive :
+Breakpoints :        screen > 1200px
+            1200px > screen > 800
+            800px > screen > 740
+
+Le site n'est responsive que jusqu'à 740px !!
+*/
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    
+    /************** Header **************/
+    header{
+        background-size: 199vw 90vh;
+        background-position: -6px -200px;
+        background-attachment: scroll;
+    }
+
+    .head-container,
+    .main-container,
+    .foot-container
+    {
+        min-width: 800px;
+        max-width: 1199px;
+    }
+
+    .nav{
+        width: 1200px;
+        min-width: 800px;
+    }
+
+    .headresearch{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submit{
+        width: 800px;
+        align-self: flex-start;
+    }
+    
+    /************** Main **************/
+    .cell1,
+    .cell2{
+        min-width: 190px;
+        
+    }
+    
+    .cell2{
+        justify-self: flex-end;
+        justify-content: flex-end ;
+        align-items: center;
+        width: auto;
+    }
+
+    .cell2 p
+    {
+        display: none
+    }
+
+
+    /************** Footer **************/
+    .cell3,
+    .cell4{
+        min-width: 190px;
+        width:auto
+    }
+    .cell3{
+        justify-self: flex-end;
+    }
+    .cell4{
+        justify-self: flex-start;
+    }
+
+
+}
+@media screen and (max-width: 800px) {
+    
+
+    /************** Header **************/
+    header{
+        background-size: 199vw 90vh;
+        background-position: -6px -200px;
+        background-attachment: scroll;
+    }
+
+    .head-container,
+    .main-container,
+    .foot-container{
+        min-width: 400px;
+        max-width: 800px;
+    }
+    .title{
+        width: 500px;
+    }
+
+    .headresearch{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 180px;
+        width: 720px;
+        margin: 50px auto;    
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form input,
+    form select{
+        width: 600px;
+        margin: 4px 0;
+    }
+    
+    .submit{
+        width: 600px;
+    }
+    .nav{
+        width: 800px;
+        min-width: 700px;
+    }
+    /************** Main **************/
+    .grille{
+        display: grid;
+        gap: 10px;
+    }
+    
+    .cell1{
+    width: 500px;
+}
+
+    .cell2{
+        display: flex;
+        justify-content: flex-end;
+        width: 200px;
+    }
+
+    .cell2 p{
+        display: none;
+    }
+
+    /*************** Footer **************/
+    .foot-grille{
+        gap: 0;
+    }
+    .cell3,.cell4{
+        height: 20vh;
+        width: 350px;
+        display: flex;
+        align-items: center;
+    }
+}
