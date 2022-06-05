@@ -1,8 +1,8 @@
 /* affichage de la carte */
 
 
-/* #accueilProjet, */
-body #accueilCV,
+#accueilProjet,
+/* body #accueilCV, */
 #accueilContact{
     display: none;
 }
