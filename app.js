@@ -4,6 +4,14 @@ const text3="<h2>Via le bouton contact vous accéderez à mes coordonnées</h2>"
 const text4="<h2>Mes projets sont disponible via le bouton projet</h2>";
 window.onload = function(){
 
+    // Dragon => 8s puis affichage du site
+    setTimeout(() => {
+        document.querySelector('#loading').style.display = "none"
+        document.querySelector('#mobile').style.display = "block"
+    },7000)
+
+
+
     // Slide automatique texte 5s
     var i = 1;
     var text;
@@ -28,7 +36,7 @@ window.onload = function(){
         document.querySelector("#sousTitre").innerHTML = text
     }, 5000)
     
-    // ******************************Evenement click sur la nav
+    // ******************************Evenement click sur la nav et le footer
     // -------- Les bouton header--------
     var boutonAccueil = document.querySelectorAll(".boutonNav")[0],
     boutonProjet = document.querySelectorAll(".boutonNav")[1],
@@ -108,7 +116,7 @@ window.onload = function(){
         }
             
     })
-
+    // **************************************Fin des bouton navigation 
 
 
 

@@ -9,326 +9,359 @@
 	</head>
 	<body>
 
-		<!-- ********************* Header -->
-
-		<header class="headBG">
-			<div class="headcontainer">
-				<div class="navi">
-					<button class="boutonNav"><a href="#" >Accueil</a></button>
-					<button class="boutonNav"><a href="#">Projet</a></button>
-					<button class="boutonNav"><a href="#">Contact</a></button>
-				</div>
-				<div class="flexBoxTitre ">
-					<div class="boxtitre">
-						<h1 class="titre">ANTOINE JEREMY</h1>
-						<h2 class="sousTitre" id="sousTitre">Bienvenue sur mon porte-folio</h2>
-						<!-- h2 a faire changer avec js toute les 7s -->
-						<!-- text 1 : Bienvenue sur mon porte-folio-->
-						<!-- text 2 : Vous trouverez ci-dessous mon cv -->
-						<!-- text 3 : Via le bouton contact vous accederez a mes coordonnées -->
-						<!-- text 4 : Mes projets sont disponible via le bouton projet -->
-					</div>
-				</div>
-				<!-- burger navigation -->
-				<!-- <span class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</span> -->
-			</div>
-		</header>
-		
-		<!--********************** Main -->
-
-		<main class="">
+		<!-- *****Animation chargement dragon***** -->
+		<div id="loading">
 			
-			<div class="maincontainer">
-				
-		<!-- Carte Presentation -->
-
-				<section class="accueilCV" id="accueilCV">
-					<div class="subcontainer">
-						<div>
-							<h2 class="sectionTitle">Qui suis-je ?</h2>
-						</div>
-						<div class=>
-							<p>Je me nomme ANTOINE Jérémy et je suis en formation de Developement Web et Web Mobile. </p>
-							<p> Je suis actuellement à la recherche d'un stage de fin de formation pour le mois de septembre.</p>
-							<p>Vous accederez à mon CV en appuyant sur le bouton ci-dessous </p>
-						</div>
-						<div >
-							<button class="boutonCV">
-								<a href="#" id="boutonCV">Accéder à mon CV</a>
-							</button>
-						</div>
+			
+			<div class="main">
+				<div class="shadow-wrapper">
+					<div class="shadow"></div>
+        </div>
+        <div class="dragon">
+            <div class="body"></div>
+            <div class="horn-left"></div>
+            <div class="horn-right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="blush left"></div>
+            <div class="blush right"></div>
+            <div class="mouth"></div>
+            <div class="tail-sting"></div>
 					</div>
-
-				</section>
-
-		<!-- Carte  projet -->
-
-				<section class="accueilProjet" id="accueilProjet">
-					<div class="subcontainer">
-						<div>
-							<h2 class="sectionTitle ">Mes projet</h2>
-						</div>
-						<h3>Voici la lists de mes differents projets</h3>
-
-				<!-- Carte Mokkafé -->
-
-						<div class="containGrid">
-
-							
-							<div class="projetGrid ">
-								<!-- Image et accees au projet -->
-								<div class="cell1" id="mokkafe">
-									<img src="./asset/img/gridProjet/Img-Mokkafe.png" alt="">
-									<button type="button" class="boutonProjet" >
-										<a href="./projet/café/cafe.html" target="_blank">
-											Voir ce projet
-										</a>
-									</button>
-								</div>
-								<!-- Description du projet-->
-								<div class="cell2">
-
-									
-									<div>
-										<h4 class="Titre">
-											Page d'accueil : Mokkafé
-										</h4>
-									</div>
-
-									<div>
-										<p>
-											Page en HTML/CSS 
-										</p>
-										<p>
-											Responsive : non, pour ordinateur
-										</p>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-				<!-- Carte Location voiture -->
-
-						<div class="containGrid">
-
-							
-							<div class="projetGrid ">
-								<!-- Image et accees au projet -->
-								<div class="cell1" id="mokkafe">
-									<img src="./asset/img/gridProjet/Img-locationVoiture.png" alt="">
-									<button type="button" class="boutonProjet" >
-										<a href="./projet/locationVoiture/index.html" target="_blank">
-											Voir ce projet
-										</a>
-									</button>
-								</div>
-								<!-- Description du projet-->
-								<div class="cell2">
-
-
-									<div>
-										<h4 class="Titre">
-											Page d'acceuil : Site de location
-										</h4>
-									</div>
-
-									<div>
-										<p>
-											Page en HTML/CSS et Java_Script
-										</p>
-										<p>
-											Responsive : oui, pour ordinateur et tablette
-										</p>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-				<!-- Carte Discord -->
-
-						<div class="containGrid">
-
-							
-							<div class="projetGrid ">
-								<!-- Image et accees au projet -->
-								<div class="cell1" id="discord">
-									<iframe src="https://discord.com/widget?id=979834174150168596&theme=dark" style="margin-top:10px" width="200" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-									<!-- <iframe src="https://discord.com/widget?id=979834174150168596&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
-									<button type="button" class="boutonProjet" >
-										<a href="https://discord.gg/8avPSCUAsR" target="_blank">
-											Voir ce projet
-										</a>
-									</button>
-								</div>
-								<!-- Description du projet-->
-								<div class="cell2">
-
-
-									<div>
-										<h4 class="Titre">
-											Discord : Les Developpeurs des Antilles
-										</h4>
-									</div>
-
-									<div>
-										<p>
-											Creation d'un salon discord communautaire et creation d'un bot en Java_Script via la librairie "Discord.js"
-										</p>
-										
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<!-- Si il faut rajouter une carte : copier carte mokkafé-->
-
-						
+					<div class="fire-wrapper">
+						<div class="fire"></div>
 					</div>
-				</section>
-
-		<!-- Carte Contact -->
-
-				<section class="accueilContact" id="accueilContact">
-
-					<div class="subcontainer">
-
-						<div >
-							<h2 class="sectionTitle">Comment me contacter ?</h2>
-						</div>
-
-						<h3>Vous trouverez ci-dessous les differents moyen de me jouindre.</h3>
-						<div class="gridContainer
-						">
-
-						<div class="contactMe ">
-
-						<!-- cell1 -->
-
-							<div class="contactCell1 ">
-								<p>Mon numero : </p>
-							</div>
-
-						<!-- cell2 -->
-
-							<div class="contactCell2 ">
-								<p>+33.7.86.64.68.17</p>
-
-							</div>
-
-						</div>
-
-							<div class="contactMe ">
-
-							<!-- cell1 -->
-
-								<div class="contactCell1 ">
-									<p>Mon mail : </p>
-								</div>
-
-							<!-- cell2 -->
-
-								<div class="contactCell2 ">
-									<p>j.antoine971@hotmail.fr</p>
-									<button>
-										<a href="mailto:j.antoine971@hotmail.fr">
-										Me contacter par mail
-										</a>
-									</button>
-								</div>
-
-							</div>
-
-							<div class="contactMe ">
-
-							<!-- cell1 -->
-
-								<div class="contactCell1  ">
-									<p>Ma page Linkedin : </p>
-								</div>
-
-							<!-- cell2 -->
-
-								<div class="contactCell2 ">
-
-									<button>
-										<a href="www.linkedin.com/in/jeremy-antoine-dwwm">
-										Acceder à mon Linkedin
-										</a>
-									</button>
-								</div>
-
-							</div>
-
-
-							<div class="contactMe ">
-
-							<!-- cell1 -->
-
-								<div class="contactCell1 ">
-									<p>Mon serveur Discord : </p>
-								</div>
-
-							<!-- cell2 -->
-
-								<div class="contactCell2 ">
-									<p>Les Developpeurs des Antilles</p>
-									<button>
-										<a href="https://discord.gg/8avPSCUAsR">
-										Acceder à mon serveur
-										</a>
-									</button>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</section>
-
-
-			</div>
-
-			<!-- </div> -->
-		</main>
-
-		<!-- ********************** Footer -->
-
-		<Footer>
-			<div class="footcontainer">
-				<div class="footSubcontainer">
-					<div class="footNavi ">
-						<p>Acceder à : </p>
-						<p class="FootHover">Accueil</p>
-						
-						<p class="FootHover">Projet</p>
-						<p class="FootHover">Contact</p>
-					</div>
-					<div class="footSocial">
-						
-						<!-- Icone Linkedin -->
-
-						<a href="www.linkedin.com/in/jeremy-antoine-dwwm" target="_blank">
-							<img src="./asset/icone/linkedin.png" alt="">
-						</a>
-
-						<!-- icone Discord -->
-
-						<a href="https://discord.gg/8avPSCUAsR" target="_blank">
-							<img src="./asset/icone/discord.png" alt="">
-						</a>
-						
+					<div class="progress">
+						<div class="outer">
+							<div class="inner"></div>
+            </div>
 					</div>
 				</div>
+				
 			</div>
-		</Footer>
+		<!-- *****FIN  Animation chargement dragon***** -->
 
+		<div id="laptop"></div>
+		<div id="mobile">
+			<!-- ********************* Header -->
+			<header class="headBG">
+				<div class="headcontainer">
+					<div class="navi">
+						<button class="boutonNav"><a href="#" >Accueil</a></button>
+						<button class="boutonNav"><a href="#">Projet</a></button>
+						<button class="boutonNav"><a href="#">Contact</a></button>
+					</div>
+					<div class="flexBoxTitre ">
+						<div class="boxtitre">
+							<h1 class="titre">ANTOINE JEREMY</h1>
+							<h2 class="sousTitre" id="sousTitre">Bienvenue sur mon porte-folio</h2>
+							<!-- h2 a faire changer avec js toute les 7s -->
+							<!-- text 1 : Bienvenue sur mon porte-folio-->
+							<!-- text 2 : Vous trouverez ci-dessous mon cv -->
+							<!-- text 3 : Via le bouton contact vous accederez a mes coordonnées -->
+							<!-- text 4 : Mes projets sont disponible via le bouton projet -->
+						</div>
+					</div>
+					<!-- burger navigation -->
+					<!-- <span class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span> -->
+				</div>
+			</header>
+			
+			<!--********************** Main -->
+
+			<main class="">
+				
+				<div class="maincontainer">
+					
+			<!-- Carte Presentation -->
+
+					<section class="accueilCV" id="accueilCV">
+						<div class="subcontainer">
+							<div>
+								<h2 class="sectionTitle">Qui suis-je ?</h2>
+							</div>
+							<div class=>
+								<p>Je me nomme ANTOINE Jérémy et je suis en formation de Developement Web et Web Mobile. </p>
+								<p> Je suis actuellement à la recherche d'un stage de fin de formation pour le mois de septembre.</p>
+								<p>Vous accederez à mon CV en appuyant sur le bouton ci-dessous </p>
+							</div>
+							<div >
+								<button class="boutonCV">
+									<a href="#" id="boutonCV">Accéder à mon CV</a>
+								</button>
+							</div>
+						</div>
+
+					</section>
+
+			<!-- Carte  projet -->
+
+					<section class="accueilProjet" id="accueilProjet">
+						<div class="subcontainer">
+							<div>
+								<h2 class="sectionTitle ">Mes projet</h2>
+							</div>
+							<h3>Voici la lists de mes differents projets</h3>
+
+					<!-- Carte Mokkafé -->
+
+							<div class="containGrid">
+
+								
+								<div class="projetGrid ">
+									<!-- Image et accees au projet -->
+									<div class="cell1" id="mokkafe">
+										<img src="./asset/img/gridProjet/Img-Mokkafe.png" alt="">
+										<button type="button" class="boutonProjet" >
+											<a href="./projet/café/cafe.html" target="_blank">
+												Voir ce projet
+											</a>
+										</button>
+									</div>
+									<!-- Description du projet-->
+									<div class="cell2">
+
+										
+										<div>
+											<h4 class="Titre">
+												Page d'accueil : Mokkafé
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Page en HTML/CSS 
+											</p>
+											<p>
+												Responsive : non, pour ordinateur
+											</p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+					<!-- Carte Location voiture -->
+
+							<div class="containGrid">
+
+								
+								<div class="projetGrid ">
+									<!-- Image et accees au projet -->
+									<div class="cell1" id="mokkafe">
+										<img src="./asset/img/gridProjet/Img-locationVoiture.png" alt="">
+										<button type="button" class="boutonProjet" >
+											<a href="./projet/locationVoiture/index.html" target="_blank">
+												Voir ce projet
+											</a>
+										</button>
+									</div>
+									<!-- Description du projet-->
+									<div class="cell2">
+
+
+										<div>
+											<h4 class="Titre">
+												Page d'acceuil : Site de location
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Page en HTML/CSS et Java_Script
+											</p>
+											<p>
+												Responsive : oui, pour ordinateur et tablette
+											</p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+					<!-- Carte Discord -->
+
+							<div class="containGrid">
+
+								
+								<div class="projetGrid ">
+									<!-- Image et accees au projet -->
+									<div class="cell1" id="discord">
+										<iframe src="https://discord.com/widget?id=979834174150168596&theme=dark" style="margin-top:10px" width="200" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+										<!-- <iframe src="https://discord.com/widget?id=979834174150168596&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+										<button type="button" class="boutonProjet" >
+											<a href="https://discord.gg/8avPSCUAsR" target="_blank">
+												Voir ce projet
+											</a>
+										</button>
+									</div>
+									<!-- Description du projet-->
+									<div class="cell2">
+
+
+										<div>
+											<h4 class="Titre">
+												Discord : Les Developpeurs des Antilles
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Creation d'un salon discord communautaire et creation d'un bot en Java_Script via la librairie "Discord.js"
+											</p>
+											
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Si il faut rajouter une carte : copier carte mokkafé-->
+
+							
+						</div>
+					</section>
+
+			<!-- Carte Contact -->
+
+					<section class="accueilContact" id="accueilContact">
+
+						<div class="subcontainer">
+
+							<div >
+								<h2 class="sectionTitle">Comment me contacter ?</h2>
+							</div>
+
+							<h3>Vous trouverez ci-dessous les differents moyen de me jouindre.</h3>
+							<div class="gridContainer
+							">
+
+							<div class="contactMe ">
+
+							<!-- cell1 -->
+
+								<div class="contactCell1 ">
+									<p>Mon numero : </p>
+								</div>
+
+							<!-- cell2 -->
+
+								<div class="contactCell2 ">
+									<p>+33.7.86.64.68.17</p>
+
+								</div>
+
+							</div>
+
+								<div class="contactMe ">
+
+								<!-- cell1 -->
+
+									<div class="contactCell1 ">
+										<p>Mon mail : </p>
+									</div>
+
+								<!-- cell2 -->
+
+									<div class="contactCell2 ">
+										<p>j.antoine971@hotmail.fr</p>
+										<button>
+											<a href="mailto:j.antoine971@hotmail.fr">
+											Me contacter par mail
+											</a>
+										</button>
+									</div>
+
+								</div>
+
+								<div class="contactMe ">
+
+								<!-- cell1 -->
+
+									<div class="contactCell1  ">
+										<p>Ma page Linkedin : </p>
+									</div>
+
+								<!-- cell2 -->
+
+									<div class="contactCell2 ">
+
+										<button>
+											<a href="www.linkedin.com/in/jeremy-antoine-dwwm">
+											Acceder à mon Linkedin
+											</a>
+										</button>
+									</div>
+
+								</div>
+
+
+								<div class="contactMe ">
+
+								<!-- cell1 -->
+
+									<div class="contactCell1 ">
+										<p>Mon serveur Discord : </p>
+									</div>
+
+								<!-- cell2 -->
+
+									<div class="contactCell2 ">
+										<p>Les Developpeurs des Antilles</p>
+										<button>
+											<a href="https://discord.gg/8avPSCUAsR">
+											Acceder à mon serveur
+											</a>
+										</button>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</section>
+
+
+				</div>
+
+				<!-- </div> -->
+			</main>
+
+			<!-- ********************** Footer -->
+
+			<Footer>
+				<div class="footcontainer">
+					<div class="footSubcontainer">
+						<div class="footNavi ">
+							<p>Acceder à : </p>
+							<p class="FootHover">Accueil</p>
+							
+							<p class="FootHover">Projet</p>
+							<p class="FootHover">Contact</p>
+						</div>
+						<div class="footSocial">
+							
+							<!-- Icone Linkedin -->
+
+							<a href="www.linkedin.com/in/jeremy-antoine-dwwm" target="_blank">
+								<img src="./asset/icone/linkedin.png" alt="">
+							</a>
+
+							<!-- icone Discord -->
+
+							<a href="https://discord.gg/8avPSCUAsR" target="_blank">
+								<img src="./asset/icone/discord.png" alt="">
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</Footer>
+		</div>
 
 		<script src="./app.js"></script>
 
