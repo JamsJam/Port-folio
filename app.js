@@ -27,17 +27,22 @@ window.onload = function(){
         
         document.querySelector("#sousTitre").innerHTML = text
     }, 5000)
-
+    
     // ******************************Evenement click sur la nav
-    var boutonAccueil = document.querySelectorAll(".boutonNav")[0]
-    var boutonProjet = document.querySelectorAll(".boutonNav")[1]
-    var boutonContact = document.querySelectorAll(".boutonNav")[2]
-    var accueil = document.querySelector("#accueilCV")
-    var projet = document.querySelector("#accueilProjet")
-    var contact = document.querySelector("#accueilContact")
+    // -------- Les bouton header--------
+    var boutonAccueil = document.querySelectorAll(".boutonNav")[0],
+    boutonProjet = document.querySelectorAll(".boutonNav")[1],
+    boutonContact = document.querySelectorAll(".boutonNav")[2],
+    // -------- Les sections--------
+        accueil = document.querySelector("#accueilCV"),
+        projet = document.querySelector("#accueilProjet"),
+        contact = document.querySelector("#accueilContact"),
+    // -------- Bouton du footeur-------- 
+        footerAccueil =document.querySelectorAll(".FootHover")[0],
+        footerProjet =document.querySelectorAll(".FootHover")[1],
+        footerContact =document.querySelectorAll(".FootHover")[2];
     console.log(window.getComputedStyle(accueil).display)
-    // console.log(boutonProjet)
-    // console.log(boutonContact)
+
 
     boutonAccueil.addEventListener('click',() => {
         if (window.getComputedStyle(accueil).display == "none"){
@@ -68,4 +73,43 @@ window.onload = function(){
         }
             
     })
+
+
+
+// ***********************Navigation Footer
+
+
+    footerAccueil.addEventListener('click',() => {
+        if (window.getComputedStyle(accueil).display == "none"){
+            console.log("change")
+            accueil.style.display = "flex";
+            projet.style.display = "none";
+            contact.style.display = "none";
+        }
+            
+    })
+
+    footerProjet.addEventListener('click',() => {
+        if (window.getComputedStyle(projet).display == "none"){
+            console.log("change")
+            accueil.style.display = "none";
+            projet.style.display = "flex";
+            contact.style.display = "none";
+        }
+            
+    })
+
+    footerContact.addEventListener('click',() => {
+        if (window.getComputedStyle(contact).display == "none"){
+            console.log("change")
+            accueil.style.display = "none";
+            projet.style.display = "none";
+            contact.style.display = "flex";
+        }
+            
+    })
+
+
+
+
 };

@@ -2,8 +2,9 @@
 
 
 #accueilProjet,
-/* body #accueilCV, */
-#accueilContact{
+body #accueilCV
+/* ,#accueilContact */
+{
     display: none;
 }
 
@@ -230,7 +231,7 @@ position: relative;
     color: rgb(17 15 40);
 
 }
-/******************* Fien de la Carte acceuilCV */
+/******************* Fin de la Carte acceuilCV */
 
 /*******************Debut Carte acceuil Projet */
 
@@ -315,6 +316,84 @@ position: relative;
 .boutonProjet:hover a{
     color: rgb(17 15 40);
 }
+/*******************Fin Carte acceuilProjet*/
+
+/*******************Debut Carte acceuilContact */
+.accueilContact{
+
+    height: 950px;
+}
+
+.accueilContact .subcontainer{
+    /* margin-bottom: 20px ; */
+    min-height: 900px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto ;
+    border: 2px solid rgb(53, 48, 42);
+    border-radius: 20px;
+    background-color:rgb(64, 59, 52);
+    color: #C9CACC;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(15,14,42,0.61); 
+    box-shadow: 0px 0px 24px -1px rgba(15,14,42,0.61);
+    text-align: center;
+
+}
+
+.contactMe{
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    border-top: 2px solid #ffffff50;
+    margin: 20px 0;
+}
+
+.contactCell1 p,
+.contactCell2 p
+{
+    
+    font-size: 0.9rem;
+}
+
+.contactCell2{
+    margin: 20px 0;
+    
+
+}
+.contactCell2 button{
+    height: 50px;
+    width: 140px;
+    margin: 10px 0;
+    border-radius:20px ;
+    background-color: rgb(33, 30, 75);
+    border: 2px solid rgb(43 40 34);
+    -webkit-box-shadow: -10px -7px 12px -4px #0f0e2a; 
+    box-shadow: -10px -7px 12px -4px #0f0e2a;
+    transition: 0.2s;
+}
+.contactCell2 a{
+    margin: 10px 0;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #C9CACC;
+}
+
+.contactCell2 button:hover{
+    background-color:#C9CACC ;
+    -webkit-box-shadow: 10px 7px 12px -4px #0f0e2a; 
+    box-shadow: 10px 7px 12px -4px #0f0e2a;
+}
+
+.contactCell2 a:hover{
+    color: rgb(17 15 40);
+}
+
+
 /***************************************Footer  */
 footer{
     
@@ -345,10 +424,18 @@ footer{
     align-items: center;
 }
 
-.footNavi p{
+.footNavi a{
     font-size: 0.8rem;
     margin: 0 -20px;
     /* border: 0.5px solid rgba(255, 255, 255, 0.393); */
+}
+
+.FootHover:hover{
+
+    padding-bottom: 5px;
+    border-bottom: 1px solid ;
+    transition:  all 0.2s;
+
 }
 
 .footSocial{
@@ -359,3 +446,13 @@ footer{
 }
 
 
+.footSocial a img{
+    height: 60px;
+}
+
+
+.footSocial a img:hover{
+    height: 80px;
+    transform : rotate(1080deg);
+    transition: 0.7s ease-out;
+}
