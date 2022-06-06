@@ -12,7 +12,7 @@ window.onload = function(){
 
 
 
-    // Slide automatique texte 5s
+    // Slide text automatique texte 5s
     var i = 1;
     var text;
     
