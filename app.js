@@ -1,15 +1,57 @@
-const text1="<h2>Bienvenue sur mon porte-folio</h2>";
-const text2="<h2>Vous trouverez ci-dessous mon CV</h2>";
-const text3="<h2>Via le bouton contact vous accéderez à mes coordonnées</h2>";
-const text4="<h2>Mes projets sont disponible via le bouton projet</h2>";
-window.onload = function(){
+const text1="<h2>Bienvenue sur mon porte-folio.</h2>";
+const text2="<h2>Vous trouverez ci-dessous mon CV.</h2>";
+const text3="<h2>Via le bouton contact vous accéderez à mes coordonnées.</h2>";
+const text4="<h2>Mes projets sont disponibles via le bouton proje.</h2>";
 
-    // Dragon => 8s puis affichage du site
+window.onload = function(){
+    
+    
+    //************************************ Fonction responsive 768px
+    
+
+    var screenTaille = window.innerWidth,
+        screenTailleVerif = Boolean(screenTaille  < 768);
+    
+    console.log(screenTaille)
+    console.log(screenTailleVerif)
+    
+    // Dragon de chargement => 8s puis affichage du site sinon la taille de l'ecran
+
     setTimeout(() => {
         document.querySelector('#loading').style.display = "none"
-        document.querySelector('#mobile').style.display = "block"
+        if([screenTailleVerif] == "true") {
+            
+            document.querySelector('#mobile').style.display = "block"
+        }
+        else{
+            
+            document.querySelector('#laptop').style.display = "block"
+        }
     },7000)
+    
+    // *********Fin du dragon de chargement
 
+    //********* Changement d'affichage en fonction de la taille
+
+    //  resize est un evenement qui se surveiller un changement des dimensions de la page
+    window.addEventListener("resize", () => {
+        var screenTailleChange = window.innerWidth,
+            // boolean verifie si mon expression est vrai ou fausse (ici : si la largeur de mon ecran est < 768px)
+            screenTailleChangeVerif = Boolean(screenTailleChange  < 768);
+        console.log(screenTailleChange)
+        console.log(screenTailleChangeVerif)
+        if ( [screenTailleChangeVerif] == "true" ){
+            
+            document.querySelector('#mobile').style.display = "block"
+            document.querySelector('#laptop').style.display = "none"
+        }
+        else{
+            
+            document.querySelector('#laptop').style.display = "block"
+            document.querySelector('#mobile').style.display = "none"
+        }
+
+    })
 
 
     // Slide text automatique texte 5s
@@ -36,7 +78,9 @@ window.onload = function(){
         document.querySelector("#sousTitre").innerHTML = text
     }, 5000)
     
-    // ******************************Evenement click sur la nav et le footer
+
+// ******************************Evenement click sur la nav Header et le footer
+
     // -------- Les bouton header--------
     var boutonAccueil = document.querySelectorAll(".boutonNav")[0],
     boutonProjet = document.querySelectorAll(".boutonNav")[1],
@@ -82,10 +126,7 @@ window.onload = function(){
             
     })
 
-
-
 // ***********************Navigation Footer
-
 
     footerAccueil.addEventListener('click',() => {
         if (window.getComputedStyle(accueil).display == "none"){
