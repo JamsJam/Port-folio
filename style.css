@@ -1,4 +1,21 @@
-/* *********************** DRAGON CHARGEMENT */
+/* reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Situation initial */
+#laptop,
+#mobile{
+    display: none;
+}
+
+
+
+/* **************************************************************** DRAGON CHARGEMENT */
 
 #loading {
     height: 100vh;
@@ -281,15 +298,9 @@
 }
 
 
+/* **************************************************************** Fin  DRAGON CHARGEMENT */
 
-
-/* *********************** Fin DRAGON CHARGEMENT */
-
-
-
-#mobile{
-    display: none;
-}
+/* **************************************************************** Debut site */
 
 
 /* affichage de la carte */
@@ -303,14 +314,6 @@
     display: none;
 }
 
-/* reset */
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /* Permet de se reperer à supprimer  */
 
@@ -528,6 +531,7 @@ position: relative;
 }
 /******************* Fin de la Carte acceuilCV */
 
+
 /*******************Debut Carte acceuil Projet */
 
 .accueilProjet{
@@ -612,6 +616,7 @@ position: relative;
     color: rgb(17 15 40);
 }
 /*******************Fin Carte acceuilProjet*/
+
 
 /*******************Debut Carte acceuilContact */
 .accueilContact{

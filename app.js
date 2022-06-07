@@ -1,7 +1,7 @@
 const text1="<h2>Bienvenue sur mon porte-folio.</h2>";
 const text2="<h2>Vous trouverez ci-dessous mon CV.</h2>";
 const text3="<h2>Via le bouton contact vous accéderez à mes coordonnées.</h2>";
-const text4="<h2>Mes projets sont disponibles via le bouton proje.</h2>";
+const text4="<h2>Mes projets sont disponibles via le bouton projet.</h2>";
 
 window.onload = function(){
     
@@ -10,11 +10,9 @@ window.onload = function(){
     
 
     var screenTaille = window.innerWidth,
-        screenTailleVerif = Boolean(screenTaille  < 768);
+    screenTailleVerif = Boolean(screenTaille  < 770);
     
-    console.log(screenTaille)
-    console.log(screenTailleVerif)
-    
+
     // Dragon de chargement => 8s puis affichage du site sinon la taille de l'ecran
 
     setTimeout(() => {
@@ -36,10 +34,9 @@ window.onload = function(){
     //  resize est un evenement qui se surveiller un changement des dimensions de la page
     window.addEventListener("resize", () => {
         var screenTailleChange = window.innerWidth,
-            // boolean verifie si mon expression est vrai ou fausse (ici : si la largeur de mon ecran est < 768px)
-            screenTailleChangeVerif = Boolean(screenTailleChange  < 768);
-        console.log(screenTailleChange)
-        console.log(screenTailleChangeVerif)
+        // boolean verifie si mon expression est vrai ou fausse (ici : si la largeur de mon ecran est < 768px)
+        screenTailleChangeVerif = Boolean(screenTailleChange  < 770);
+        
         if ( [screenTailleChangeVerif] == "true" ){
             
             document.querySelector('#mobile').style.display = "block"
@@ -83,17 +80,17 @@ window.onload = function(){
 
     // -------- Les bouton header--------
     var boutonAccueil = document.querySelectorAll(".boutonNav")[0],
-    boutonProjet = document.querySelectorAll(".boutonNav")[1],
-    boutonContact = document.querySelectorAll(".boutonNav")[2],
+        boutonProjet = document.querySelectorAll(".boutonNav")[1],
+        boutonContact = document.querySelectorAll(".boutonNav")[2],
     // -------- Les sections--------
         accueil = document.querySelector("#accueilCV"),
         projet = document.querySelector("#accueilProjet"),
-        contact = document.querySelector("#accueilContact"),
+        contact = document.querySelector("#accueilContact");
     // -------- Bouton du footeur-------- 
-        footerAccueil =document.querySelectorAll(".FootHover")[0],
-        footerProjet =document.querySelectorAll(".FootHover")[1],
+        footerAccueil =document.querySelectorAll(".FootHover")[0];
+        footerProjet =document.querySelectorAll(".FootHover")[1];
         footerContact =document.querySelectorAll(".FootHover")[2];
-    console.log(window.getComputedStyle(accueil).display)
+    console.log(window.getComputedStyle(accueil).display);
 
 
     boutonAccueil.addEventListener('click',() => {
