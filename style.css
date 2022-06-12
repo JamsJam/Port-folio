@@ -450,19 +450,31 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     height: 100vh;
+    text-align: center;
 }
+/* ******Partie projet */
 
-/* .L-projet{
-
-} */
+.l-card-projet{
+    margin: 10px 0;
+    border-bottom: #ffcd33 1px solid;
+}
 
 
 .grid-proj{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:repeat(auto-fit,minmax(160px, 1fr));
     width: 20vw;
-    margin: 0 auto;
+    margin: 20px auto;
+    
 
+}
+
+.projImg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
 }
 
 /* .L-presentation{
