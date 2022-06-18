@@ -193,7 +193,7 @@
     width: 0;
     height: 100%;
     background: #ffcd33;
-    animation: loading 8s linear infinite;
+    animation: loading 5s linear infinite;
 }
 
 @keyframes zoomIn {
@@ -459,15 +459,17 @@
     border-bottom: #ffcd33 1px solid;
 }
 
-
+.l-contact-grid,
 .grid-proj{
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(160px, 1fr));
     width: 20vw;
     margin: 20px auto;
+    border-bottom: #C9CACC 1px solid;
     
 
 }
+
 
 .projImg{
     display: flex;
@@ -477,9 +479,17 @@
     align-items: stretch;
 }
 
-/* .L-presentation{
-
+/* .l-contact-grid{
 } */
+
+.l-contact-cell1,
+.l-contact-cell2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 30px;
+    /* padding-bottom: 50px; */
+}
 
 /* *************************************************************Fin l-Main */
 

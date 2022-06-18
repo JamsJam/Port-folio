@@ -25,7 +25,7 @@ window.onload = function(){
             
             document.querySelector('#laptop').style.display = "block"
         }
-    },7000)
+    },4000)
     
     // *********Fin du dragon de chargement
 
