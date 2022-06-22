@@ -7,7 +7,7 @@
 }
 header{
     text-align:center ;
-    height: 20vh; 
+    height: 250px; 
     background-color: #a62525; 
     color: beige; 
     display: flex;
@@ -118,37 +118,138 @@ justify-content: center;
     transform:rotate(135deg);
 }
 
-.bord-accordion details div{
+.accordion-content{
     background-color: paleturquoise;
 
 
 }
-.bord-accordion details div div:nth-child(2){
+.introduction{
     /* background-color: paleturquoise; */
     display: flex; 
     justify-content: space-evenly ;
+    padding: 20px 0;
 
 }
 
-.bord-accordion details div div:nth-child(2) article h3{
-   text-align: center;
-   margin-bottom: 10px;
+.intro-title{
+    text-align: center;
+    margin-bottom: 10px;
 
 }
 
-.bord-accordion details div div:nth-child(2) article p{
-   text-align: start;
-   max-width: 400px;
-   padding: 10px;
+.intro-para{
+    text-align: start;
+    max-width: 400px;
+    padding: 10px;
 
 }
 
-.personnalitee div{
+.personnalitee{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: black 2px solid;
+}
+
+.softSkill{
     display: flex; 
     align-items: center;
     height: 150px;
 }
 
-.personnalitee div li{
-    margin : 10px 0
+.softSkill ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.softSkill li{
+    margin : 10px 0;
+    /* padding: 10px; */
+}
+
+#competence{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+    padding: 0 30px
+}
+#competence h3{
+    text-align : center;
+    margin-bottom: 20px
+}
+
+#competence article {
+    margin: 0 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px rgba(46, 44, 44, 0.151) dashed;
+}
+
+#formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+    padding: 0 30px
+}
+
+#formation h3{
+    text-align : center;
+    margin-bottom: 20px
+}
+
+#formation article {
+    margin: 0 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px rgba(46, 44, 44, 0.151) dashed;
+}
+
+#formation article p{
+    text-align: center;
+}
+
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+    padding: 0 30px
+
+}
+
+#experience h3{
+    text-align : center;
+    margin-bottom: 20px
+}
+
+#experience ul{
+    list-style: none;
+
+
+}
+
+#hobbie{
+    display: flex;
+    /* flex-direction:; */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+    padding: 0 30px
+}
+
+#hobbie h3{
+    text-align : center;
+    margin-bottom: 20px
+}
+
+#hobbie article {
+    margin: 0 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px rgba(46, 44, 44, 0.151) dashed;
+}
+
+#hobbie article p{
+    text-align: center;
 }
