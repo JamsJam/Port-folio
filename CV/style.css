@@ -36,7 +36,7 @@ header h2{
 
 .grid-cell1{
     background-color: #1d87d7;
-    /* border: 2px black solid; */
+   
     color: white;
 }
 
@@ -101,6 +101,9 @@ justify-content: center;
     
     box-shadow: 0px 0px 21px 1px black;
 }
+ #discord{
+    background-color: transparent;
+ }
 
 .aside-grid-2 img:hover{
     transition: 0.3s ease;
