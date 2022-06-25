@@ -8,7 +8,7 @@
 header{
     text-align:center ;
     height: 250px; 
-    background-color: #a62525; 
+    background-color: #00518f; 
     color: beige; 
     display: flex;
     flex-direction: column;
@@ -35,9 +35,13 @@ header h2{
 }
 
 .grid-cell1{
-    background-color: tan;
-    border: 2px black solid;
+    background-color: #1d87d7;
+    /* border: 2px black solid; */
+    color: white;
 }
+
+
+
 .grid-cell2{
     /* border: 2px black solid; */
     min-height: 100vh;
@@ -50,11 +54,22 @@ header h2{
 
 .photoId{
     text-align: center;
-    background-color: black;
+    
+    
+}
+.photoId img{
+    
+    box-shadow: 1px 0px 25px 1px #242323f2;
+    
 }
 img{
     
     margin: 40px 0;
+}
+
+aside{
+    position: sticky;
+    top:1px;
 }
 
 .aside-container-grid{
@@ -76,13 +91,29 @@ justify-content: center;
 .aside-grid-1{
     font-size: 0.92rem;
     font-weight: 700;
+    align-items: center;
+    
 }
+
+.aside-grid-2 img{
+    background: white;
+    border-radius: 5px;
+    
+    box-shadow: 0px 0px 21px 1px black;
+}
+
+.aside-grid-2 img:hover{
+    transition: 0.3s ease;
+    transform:scale(120%);
+    box-shadow: 0px 3px 15px 1px black;
+}
+
 
 /* ******* Fin aside ***** */
 /* ******* debut main ***** */
 
 .accordion-container{
-    background-color: rgb(151, 149, 235);
+    background-color: #B7DAF5;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -98,13 +129,30 @@ justify-content: center;
 .bord-accordion details summary{
     padding: 15px;
     color: whitesmoke;
-    background-color: rgb(5, 48, 204);
+    background-color: #1D87D7;
     border: 2px solid #444;
     position: relative;
     font-size: 1.2rem;
     outline: none;
     cursor: pointer;
+    text-align: center;
+    list-style: none;
+    
     /* box-shadow: 2px 2px 5px black; */
+}
+
+.bord-accordion details summary:hover{
+    background-color: #1d5bd7;
+    transition-duration: 0.4s;
+}
+
+
+.bord-accordion details[open] summary{
+    transition-duration: 0.4s;
+    background-color: #291dd7de;
+}
+.bord-accordion details[open] summary:hover{
+    background-color: #291dd7;
 }
 
 .bord-accordion details summary::after{
@@ -119,7 +167,7 @@ justify-content: center;
 }
 
 .accordion-content{
-    background-color: paleturquoise;
+    background-color: ivory;
 
 
 }
@@ -149,7 +197,7 @@ justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-left: black 2px solid;
+    border-left: rgba(28, 17, 17, 0.448) 2px dashed;
 }
 
 .softSkill{
@@ -235,7 +283,7 @@ justify-content: center;
     /* flex-direction:; */
     justify-content: space-evenly;
     align-items: center;
-    height: 700px;
+    height: 200px;
     padding: 0 30px
 }
 
