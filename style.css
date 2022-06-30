@@ -449,7 +449,7 @@
 .L-grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 /* ******Partie projet */
@@ -457,15 +457,21 @@
 .L-contact
 {
     background-color: #000000;
+    /* overflow: hidden; */
 }
+
 
 .L-projet section,
 .L-contact section
 {   
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    -webkit-backdrop-filter: blur(02px);
-    backdrop-filter: blur(02px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 33px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 22vw;
+    margin: 0 auto;
+    box-shadow: white 0px 1px 19px 2px;
+    padding: 5px 0;
 }
 
 
@@ -482,7 +488,7 @@
     margin: 20px auto;
     border-bottom: #C9CACC 1px solid;
     
-
+    
 }
 
 
@@ -494,8 +500,12 @@
     align-items: stretch;
 }
 
-/* .l-contact-grid{
-} */
+
+.l-section-contact{
+position: sticky;
+top: 10px;
+/* transition: position 0.5s */
+}
 
 
 
