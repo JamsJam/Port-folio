@@ -309,11 +309,18 @@
 
 
 .l-header {
-    background: #000000;
     overflow: hidden;
     height: 100vh;
     width: 100vw;
-    background-color: #000000;
+    
+
+
+    background: rgb(255,255,255);
+background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,184,254,1) 2%, rgba(42,70,224,1) 7%, rgba(0,0,0,1) 8%, rgba(8,28,92,1) 9%, rgba(16,49,124,0.9752275910364145) 26%, rgba(17,23,129,1) 36%, rgba(12,22,113,1) 58%, rgba(7,18,99,1) 71%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,184,254,1) 2%, rgba(42,70,224,1) 7%, rgba(0,0,0,1) 8%, rgba(8,28,92,1) 9%, rgba(16,49,124,0.9752275910364145) 26%, rgba(17,23,129,1) 36%, rgba(12,22,113,1) 58%, rgba(7,18,99,1) 71%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,184,254,1) 2%, rgba(42,70,224,1) 7%, rgba(0,0,0,1) 8%, rgba(8,28,92,1) 9%, rgba(16,49,124,0.9752275910364145) 26%, rgba(17,23,129,1) 36%, rgba(12,22,113,1) 58%, rgba(7,18,99,1) 71%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+    /* background-color: #000000; */
     /* position: relative ; */
     
   }
@@ -404,11 +411,16 @@
     /* transition: opacity 400ms ease, color 1400ms;  */
 }
 
+.fill-support{
+    backdrop-filter: blur(1px);
+}
+
 
 .fill-support h1:hover{
     position: relative;
     color: rgba(252, 252, 252,1);
-    transition: opacity 400ms ease, color 1400ms;
+    transition: opacity 400ms ease, color 1400ms, backdrop-filter 0.3s ease;
+    backdrop-filter: blur(20px);
 }
 
 
@@ -426,11 +438,12 @@
     width: 180px;
     border-radius: 40px;
     border: 3px solid white;
-    background: black;
+    background: transparent;
     color: white;
     font-size: 1.1rem;
     font-weight: 500;
     font-stretch: normal;
+    backdrop-filter: blur(10px);
 }
 
 .l-Titre button:hover{
@@ -445,6 +458,13 @@
 
 
 /* *************************************************************Debut l-Main */
+.L-presentation{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(8,59,209,1) 25%, rgba(100,72,185,1) 50%, rgba(8,59,209,1) 75%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(8,59,209,1) 25%, rgba(100,72,185,1) 50%, rgba(8,59,209,1) 75%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(8,59,209,1) 25%, rgba(100,72,185,1) 50%, rgba(8,59,209,1) 75%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
 
 .L-grid{
     display: grid;
@@ -506,7 +526,6 @@ position: sticky;
 top: 10px;
 /* transition: position 0.5s */
 }
-
 
 
 .l-contact-cell1,
