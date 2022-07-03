@@ -98,30 +98,27 @@
 							
 								<!-- Cell imag +bouton -->
 									<div class="projImg">
-										<img src="https://via.placeholder.com/150.jpeg" alt="">
-										<button class="l-btn-proj">acceder au projet</button>
+										<img height="100" width="150" src="./asset/img/gridProjet/Img-Mokkafe.png" alt="">
+										<a href="./projet/café" target="_blank">
+											<button class="l-btn-proj">Acceder au projet</button>
+										</a>
 									</div>
 									
 								<!-- Cell descritpion -->								
 									<div class="projText">
 
 										<dl>
-											<dt>Langage :
-
+											<dt>Langage :</dt>
 												<dd>Lorem</dd>
-											</dt>
-											<dt>Librairie :
 
+											<dt>Librairie :</dt>
 												<dd>Lorem</dd>
-											</dt>
-											<dt>Framework :
 
+											<dt>Framework :</dt>
 												<dd>Lorem</dd>
-											</dt>
-											<dt>Responsive :
 
+											<dt>Responsive :</dt>
 												<dd>Lorem</dd>
-											</dt>
 										</dl>
 										
 									</div>
@@ -145,27 +142,27 @@
 
 						<div class="L-subcontainer">
 							<div>
-								<h2> Qui SUIS-JE ?</h2>
+								<h2> QUI SUIS-JE ?</h2>
 							</div>
 							<div>
+								<p>Je me nomme ANTOINE JEREMY et je suis Developpeur Web.</p>
 								<p> Je suis actuellement à la recherche d'un stage de fin de formation pour le mois de septembre.</p>
-								<p>Vous accederez à mon CV en ligne et papier en appuyant sur l'un des bouton ci-dessous </p>
-								<p></p>
+								<p>Vous accederez à mon CV en ligne et papier en appuyant sur l'un des bouton ci-dessous. </p>
 							</div>
-							<div style="display: flex; flex-direction: column; ">
+							<div class="l-btnPresentation">
 
-								<a href="">
-									<button>
-										<p>Acceder a mon CV en ligne</p>
+								<a href="./CV" target="_blank">
+									<button class="l-btnCV">
+										Accéder à mon CV en ligne
 									</button>
 								</a>
 
-								<a href="">
-									<button>
-										<p>Acceder a mon CV en ligne</p>
+								<a href="./CV/image/Jeremy_Antoine_CV.pdf" target="_blank">
+									<button class="l-btnCV">
+										Accéder à mon CV en PDF
 									</button>
 								</a>
-								
+
 							</div>
 						</div>
 					</div>
@@ -175,7 +172,7 @@
 						<div class="l-stars3"></div>
 						<section class="l-section-contact">
 							<h2>Me contacter</h2>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+							<p>Si besoin, vous pourrez me contacter via les moyens suivant.</p>
 							<div class="l-contact-container">
 
 						<!-- Cart contact -->
@@ -201,11 +198,29 @@
 								<div class="l-contact-grid" >
 									<!-- Cell1 : moyen de contact -->
 									<div class="l-contact-cell1">
+										<h3>Telephone: <h3p>
+									</div>
+									<!-- Cell2 : Valeur -->
+									<div class="l-contact-cell2">
+										<p>+33.7.86.64.68.17</p>
+									</div>
+								</div>
+							<!-- Fin grid -->
+
+						<!-- Cart contact -->
+
+
+							<!-- Debut grid -->
+								<div class="l-contact-grid" >
+									<!-- Cell1 : moyen de contact -->
+									<div class="l-contact-cell1">
 										<h3>Linkedin : </h3>
 									</div>
 									<!-- Cell2 : Valeur -->
 									<div class="l-contact-cell2">
-										<p>j.antoine971@hotmail.fr</p>
+										<a href="https://linkedin.com/in/jeremy-antoine-dwwm" target="_blank">
+											<img height="60" width="60" class="L-iconContact" src="./asset/icone/linkedin.png" alt="">
+										</a>
 									</div>
 								</div>
 							<!-- Fin grid -->
@@ -221,7 +236,9 @@
 									</div>
 									<!-- Cell2 : Valeur -->
 									<div class="l-contact-cell2">
-										<p>j.antoine971@hotmail.fr</p>
+										<a href="https://discord.gg/8avPSCUAsR" target="_blank">
+											<img height="60" width="60" class="L-iconContact" src="./asset/icone/discord.png" alt="">
+										</a>
 									</div>
 								</div>
 							<!-- Fin grid -->
@@ -234,10 +251,6 @@
 					</div>
 				</div>
 				
-			</div>
-
-			<div class="L-footer">
-				<div class="L-social">footer</div>
 			</div>
 
 		</div>
@@ -294,9 +307,16 @@
 								<p>Vous accederez à mon CV en appuyant sur le bouton ci-dessous </p>
 							</div>
 							<div >
-								<button class="boutonCV">
-									<a href="./CV/CV.html" id="boutonCV">Accéder à mon CV</a>
-								</button>
+								<a href="./CV/CV.html" target="_blank" id="boutonCV"></a>
+									<button class="boutonCV">
+										Accéder à mon CV en ligne
+									</button>
+								</a>
+								<a href="./CV/image/Jeremy_Antoine_CV.pdf" target="_blank" id="boutonCV"></a>
+									<button class="boutonCV">
+										Accéder à mon CV en PDF
+									</button>
+								</a>
 							</div>
 						</div>
 
