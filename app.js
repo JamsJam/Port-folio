@@ -50,7 +50,28 @@ window.onload = function(){
 
     })
 
+    
+    
+    // ***************************************************Laptop
 
+    document.querySelector('#H-button').addEventListener('click',() =>{
+        document.querySelector('#l-header').style.transition = "all 0.6s";
+        document.querySelector('#l-header').style.transform = "translateY(-140vh)";
+        setTimeout(() => {
+            document.querySelector('#l-header').style.display = "none";
+        }, 2000);
+    })
+
+
+
+
+
+
+
+
+
+    // ***************************************************Mobile
+    
     // Slide text automatique texte 5s
     var i = 1;
     var text;
